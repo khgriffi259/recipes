@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-3 mt-5">
+            <form method="post" action="/edit/{{recipe._id}}">
+                <h5 class="" id="">Edit Recipe</h5>
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" class="form-control" id="title" name="title" value="{{recipe.title}}">
+                </div>
+                <div class="form-group">
+                    <label for="ingredients">Ingredients</label>
+                    <input type="text" class="form-control" id="ingredients" name="ingredients" value="{{recipe.ingredients}}">
+                </div>
+                <div class="form-group">
+                    <label for="directions">Directions</label>
+                    <textarea class="form-control" id="directions" name="directions">{{recipe.directions}}</textarea>
+                </div>
+                <a class="btn btn-secondary" href="/">Close</a>
+                <button type="submit" class="btn btn-primary">Edit Recipe</button>
+            </form>
+        </div>
+    </div>
+</div>
